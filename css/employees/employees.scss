@@ -1,0 +1,79 @@
+table,
+th,
+td {
+    border: 0.1px solid rgba(0, 0, 0, 0.055);
+    border-collapse: collapse;
+    color: #141414;
+    font-size: 20px;
+    background-color: #f4f4f470;
+    padding: 10px 20px;
+    tbody{
+      
+    }
+}
+table{
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+
+.hideSalary {
+    display: none;
+}
+
+
+
+
+#content{
+  height: 100vw;
+  justify-content: flex-start;
+  align-items: center;
+  h1{
+    color: #252525;
+  }
+  .box{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    max-width: 1500px;
+
+    button{
+      width: 200px;
+      height: 36px;
+      font-size: 15px;
+      padding: 7px;
+      border-radius: 10px;
+      margin-right: 50px;
+      cursor: pointer;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items:flex-start;
+      width: 200px;
+      text-align: left;
+      label{
+        padding: 5px;
+        margin-top: 5px;
+        margin-left: 10px;
+        font-size: 18px;
+      }
+      input{
+        background-color: #f4f4f470;
+        padding: 5px;
+        font-size: 15px;
+      }
+      #submit{
+        width: 200px;
+        height: 36px;
+        font-size: 15px;
+        padding: 7px;
+        border-radius: 10px;
+        margin-right: 50px;
+        margin-top: 25px;
+        cursor: pointer;
+      }
+    }
+  }
+}
+

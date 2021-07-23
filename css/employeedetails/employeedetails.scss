@@ -1,0 +1,44 @@
+.content__box{
+  margin: 50px auto;
+  .part1{
+    margin-top: 0px;
+    padding: 30px 0;
+    &:nth-of-type(even){
+      background-color: #fff;
+      margin-top: 40px;
+      margin-bottom: 40px;
+    }
+    .image{
+      width: 40%;
+      min-width: 300px;
+      box-shadow: 10px 10px 20px rgba(0,0,0,.2);
+    }
+    .textbox{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      margin: 10px 20px 20px 20px;
+      p{
+        width: 100%;
+        margin: 0 0 10px 0;
+        font-size: 35px;
+      }
+      div{
+        font-size: 20px;
+        font-weight: 600;
+        max-width: 400px;
+        .contact{
+          padding: 20px 0;
+          font-weight: 100;
+          a{
+            color:rgb(158, 134, 0);
+            cursor: pointer;
+            font-weight: 700;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+} 

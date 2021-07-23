@@ -2,38 +2,46 @@
 <html>
 
 <head>
-    <title>Test html page</title>
+    <title>Home</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/index.css">  <!-- includare -->
 </head>
 
 <body>
 
     <div id="header">
         <ul class="menu">
-            <li>Home</li>
+            <li><a href="index.html" style="color:#f4f4f4" >Home</a></li>
             <li><a href="employees.html">Employees</a></li>
+            <li><a href="emoloyeedetails.html">Employee details</a></li>
+            <li><a href="contactus.html">Contact Us</a></li>
         </ul>
     </div>
 
     <div id="content">
-
-        <h2>This is the page heading</h2>
-
-        <p>This is a simple web page.</p>
-        <p>This is a second paragraph including text in <b>bold</b>, <i>italic</i> and <u>underlined</u>.</p>
-
-        <img src="images/dog.jpg" class="image" />
-
-        <p>Open <a href="https://dirico.io/" target="_blank">Dirico</a></p>
-
-        <br>
-
-        <h3>This is a video</h3>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/k-jhzr-bIXM" title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen></iframe>
+        <div class="content__box">
+            <div class="part1"> 
+                <h2><a style="text-shadow: 2px 2px 2px #00000050;" >
+                    This is the page heading
+                </a></h2>
+                <p>This is a simple web page.</p>
+            </div>
+            <div class="part2">
+                <p><a style="text-shadow: 0px 0px 7px #00000030;" >
+                    This is a second paragraph including text in <b>bold</b>, <i>italic</i> and <u>underlined</u>.
+                </a></p>
+                <div class="part1"> 
+                    <p><a style="text-shadow: 0px 0px 10px #00000090;" >Open</a> <a href="https://dirico.io/" target="_blank" style="text-decoration: none; color:rgb(158, 134, 0)">Dirico</a> <--</p>
+                    <img src="images/dog.jpg" class="image" style="padding: 30px; border-radius: 50%;"/>
+                </div>
+            </div> 
+            <h3 >This is a video:</h3>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/k-jhzr-bIXM" title="YouTube video player" style="padding: 50px 0;"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+            </iframe>
+        </div>
     </div>
 </body>
 

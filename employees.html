@@ -2,48 +2,35 @@
 <html>
 
 <head>
-    <title>Employees page</title>
+    <title>Employees</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/employees.css">
+    <link rel="stylesheet" href="css/employees/employees.css">
     <script src="js/employees.js"></script>
-    <!-- <style>
-        table,
-        th,
-        td {
-            border: 1px solid black;
-            border-collapse: collapse;
-        }
-    </style> -->
-    <!-- <script>
-        function showHideSalary() {
-            const elements = document.getElementsByClassName('salary');
-
-            for (let i = 0; elements.length; i++) {
-                elements[i].classList.toggle('hideSalary');
-            }
-        }
-    </script> -->
+    <script src="jquery-3.5.1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 
 <body>
     <div id="header">
         <ul class="menu">
             <li><a href="index.html">Home</a></li>
-            <li>Employees</li>
+            <li><a href="employees.html" style="color:#f4f4f4">Employees</a></li>
+            <li><a href="emoloyeedetails.html">Employee details</a></li>
+            <li><a href="contactus.html">Contact Us</a></li>
         </ul>
     </div>
-    <div id="content">
+    <div id="content" style="flex-direction: column;">
         <h1>Employees list</h1>
 
         <table style="display: inline-block;">
             <tr>
-                <th>Nr</th>
+                <th>Nr</th>  <!-- table header -->
                 <th>Name</th>
                 <th>Function</th>
                 <th class="salary">Salary</th>
             </tr>
             <tr>
-                <td>1</td>
+                <td>1</td>   <!-- table data -->
                 <td>Don Joe</td>
                 <td>Director</td>
                 <td class="salary">500</td>
@@ -69,24 +56,25 @@
         </table>
 
         <br>
-        <button id="showHideSalary" onclick="showHideSalary()">Hide Salary</button>
 
         <hr>
+        <div class="box">
+            <button id="showHideSalary" onclick="showHideSalary()">Hide Salary</button>
+            <form action="">
 
-        <form action="">
+                <label for="fname">Name:</label>
+                <input type="text" id="fname" name="name" placeholder="Name...">
 
-            <label for="fname">Name</label>
-            <input type="text" id="fname" name="name" placeholder="Name...">
+                <label for="ffunction">Function:</label>
+                <input type="text" id="ffunction" name="function" placeholder="Function...">
 
-            <label for="ffunction">Function</label>
-            <input type="text" id="ffunction" name="function" placeholder="Function...">
+                <label for="salary">Salary:</label>
+                <input type="text" id="fsalary" name="salary" placeholder="Salary...">
 
-            <label for="salary">Salary</label>
-            <input type="text" id="fsalary" name="salary" placeholder="Salary...">
+                <input id="submit" type="submit" value="Submit" onclick="pushDatas()">
 
-            <input type="submit" value="Submit">
-
-        </form>
+            </form>
+        </div>
 
     </div>
 </body>
