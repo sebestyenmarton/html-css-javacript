@@ -17,7 +17,3 @@ function pushDatas(){
     const object = { name: input1, function: input2, salary: input3 }
     alert(JSON.stringify(object));
 }
-
-$(document).ready(function(){
-
-})

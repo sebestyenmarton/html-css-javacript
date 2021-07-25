@@ -1,7 +1,29 @@
-
 body div:first-child{
   margin: 50px;
 }
+
 body div #text{
   margin-top: 15px;
+}
+
+#jshomework{
+  margin: 50px 50px 0 50px;
+}
+
+table{
+  display: none; 
+  margin: 50px;
+  border: 1px solid #000;
+  border-collapse: separate;
+}
+th,td{
+  margin: 5px;
+  padding: 7px 20px;
+  border: 1px solid #000;
+  border-collapse: collapse;
+}
+form {
+  display: inline-block;
+  text-align: center;
+  min-width: 50px;
 }
